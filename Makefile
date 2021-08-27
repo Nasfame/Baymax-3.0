@@ -1,7 +1,9 @@
 install:
-	pip install --upgrade pip && pip install -r requirements.txt
 	pip install pipwin
 	pipwin install pyaudio
+	pip --no-cache-dir install jarvisai
+#	pip --no-cache-dir install -r requirements.txt
+
 lint:
 	py -m pylint app.py
 
